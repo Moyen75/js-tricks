@@ -1,4 +1,4 @@
-//counter
+// //counter
 const counter = () => {
     let count = 0;
     const changeCount = (val) => {
@@ -35,3 +35,17 @@ count.increment();
 count.decrement();
 count.decrement();
 console.log(count.value());
+
+// counter
+function counterNew() {
+    let count = 0;
+    function increment() {
+        return count++;
+    }
+    function decrement() {
+        return count--;
+    }
+    function value() {
+        return count;
+    }
+}
