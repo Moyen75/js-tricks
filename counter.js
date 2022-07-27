@@ -48,4 +48,9 @@ function counterNew() {
     function value() {
         return count;
     }
+    return {
+        increment,
+        decrement,
+        value
+    }
 }
